@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập vòng lặp</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container m-auto py-5">
+        <div class="w-75 m-auto">
+            <!-- 1. In các số nguyên dương lẻ/ chẵn nhỏ hơn 100 -->
+            <h2 class="text-dark bg-warning p-2">1. In các số nguyên dương lẻ/ chẵn nhỏ hơn 100</h2>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnEvenOdd">Kết quả</button>
+            <h3 class="pt-2">Vòng lặp while:</h3>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultWhile" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+            <h3 class="pt-2">Vòng lặp for:</h3>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultFor" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- 2. Có bao nhiêu số chia hết cho 3 từ 0-1000 -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">2. Đếm bao nhiêu số chia hết cho 3 từ 0-1000</h2>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnCount">Đếm</button>
+            <h3 class="pt-2">Vòng lặp while:</h3>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultCount1" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+            <h3 class="pt-2">Vòng lặp for:</h3>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultCount2" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- 3. Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000 -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">3. Tìm số nguyên dương nhỏ nhất thoả: 1 + 2 + … + n > 10000</h2>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnFind">Tìm</button>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultFind" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- 4. Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + … + x^n -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">4. Tính tổng: S(n) = x + x^2 + x^3 + … + x^n</h2>
+            <form class="form-row">
+                <div class="col-4 px-2 my-2 mr-5">
+                    <label for="numX">Số x</label>
+                    <input type="number" class="form-control" id="numX" placeholder="Nhập số x">
+                </div>
+                <div class="col-4 px-2 my-2">
+                    <label for="numN">Số n</label>
+                    <input type="number" class="form-control" id="numN" placeholder="Nhập số n">
+                </div>
+            </form>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnS">Tổng S(n)</button>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultS" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- 5. Nhập vào n. Tính giai thừa 1*2*...n -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">5. Tính giai thừa 1*2*...n</h2>
+            <form class="form-row">
+                <div class="col-4 px-2 my-2">
+                    <label for="numberN">Số n</label>
+                    <input type="number" class="form-control" id="numberN" placeholder="Nhập số n">
+                </div>
+            </form>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnMulti">Tính</button>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultMulti" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- 6. In ra 10 thẻ div. Nếu div nào vị trí chẵn thì background đỏ và lẻ thì màu xanh. -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">6. In ra 10 thẻ div. Div có vị trí chẵn thì background đỏ còn lẻ thì màu xanh</h2>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnDiv">In div</button>
+            <div class="w-100 border border-info rounded py-3 px-1 bg-light mt-2" id="divNews">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>                
+            </div>
+        </div>
+
+
+        <!-- 7. In ra các số nguyên tố từ 1 tới m -->
+        <div class="w-75 m-auto pt-5">
+            <h2 class="text-dark bg-warning p-2">7. In ra các số nguyên tố từ 1 tới m </h2>
+            <form class="form-row">
+                <div class="col-4 px-2 my-2">
+                    <label for="numberM">Số m</label>
+                    <input type="number" class="form-control" id="numberM" placeholder="Nhập số m">
+                </div>
+            </form>
+            <button type="button" class="btn btn-info px-4 mt-2" id="btnPrime">Kết quả</button>
+            <div class="w-100 border border-info rounded px-1 bg-light mt-2">
+                <i class="bi bi-forward text-info" style="font-size: 25px;"></i>
+                <span id="resultPrime" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- MAIN CJ -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
